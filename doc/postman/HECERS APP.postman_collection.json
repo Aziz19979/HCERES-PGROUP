@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "56782dce-ac68-4d18-b275-7ef580905c08",
+		"name": "HECERS APP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23637355"
+	},
+	"item": [
+		{
+			"name": "Auto-Token",
+			"item": [
+				{
+					"name": "Get Researchers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Researchers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Researchers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generic",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/Educations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"Educations"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "key",
+						"value": "Authorization",
+						"type": "string"
+					},
+					{
+						"key": "value",
+						"value": "{{tokenEnv}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"// request pour gerener le token",
+							"const postRequest = {",
+							"    url: 'http://localhost:9000/user/authenticate',",
+							"    method: 'POST',",
+							"    header: {",
+							"        'Content-Type': 'application/json',",
+							"        'X-Foo': 'bar'",
+							"    },",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify({ researcherLogin: 'admin', researcherPassword:'admin' })",
+							"    }",
+							"};",
+							"// lancer la requete et sauvegarder la valeur du token dans le variable d'environnment",
+							"pm.sendRequest(postRequest, (error, response) => {",
+							"    pm.collectionVariables.set('tokenEnv', response.json()['token']);",
+							"});"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n\t\t\"researcherLogin\":\"admin\",\r\n\t\t\"researcherPassword\":\"admin\"\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/user/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"user",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Token",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOnsiaWQiOjIsIm5hbWUiOiJVU0VSIn0sImlhdCI6MTY2OTY0MTA5OSwiZXhwIjoxNjY5NjQ0Njk5fQ.N3iOn4_IxDGynvfLH928cTajZmHKO2HK4vcVb6Psquw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/checkToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"checkToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Researchers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOnsiaWQiOjIsIm5hbWUiOiJVU0VSIn0sImlhdCI6MTY2OTYzODg4MSwiZXhwIjoxNjY5NjQyNDgxfQ.vuh7telYqTUmgZG3rWpLMuQBneHQ_ET1_PHkFONM78Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/Researchers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"Researchers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "tokenEnv",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

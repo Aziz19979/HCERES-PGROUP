@@ -1,0 +1,119 @@
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={editorialActivityList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={educationList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={incomingMobilityList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={industrialContractList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={internationalCollaborationList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={oralComPosterList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={platformList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={postDocList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={reviewArticleList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={scientificExpertiseList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={seiClinicalTrialList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                    data={srAwardList}
+                    columns={columns}
+                    search
+                >
+                .....
+                </ToolkitProvider>

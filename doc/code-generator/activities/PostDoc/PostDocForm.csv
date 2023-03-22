@@ -1,0 +1,10 @@
+data Label, html type, variableName, initialVariableNameValue, jsonPath
+Nom Post Doc, string, namePostDoc, \"\", postDoc.namePostDoc
+Nom Superviseur, string, nameSupervisor, \"\", postDoc.nameSupervisor
+Date d'arrivée, date, arrivalDate, \"\", postDoc.arrivalDate
+Date de départ, date, departureDate, \"\", postDoc.departureDate
+Durée, number, duration, 0, postDoc.duration
+Nationalité, string, nationality, \"\", postDoc.nationality
+Laboratoire d'origine, string, originalLab, \"\", postDoc.originalLab
+Financement associé, string, associatedFunding, \"\", postDoc.associatedFunding
+Réf Publi associée, string, associatedPubliRef, \"\", postDoc.associatedPubliRef

@@ -1,0 +1,23 @@
+data Label, html type, variableName, initialVariableNameValue, jsonPath
+Titre, string, title, \"\", patent.title
+Date d'inscription, date, registrationDate, \"\", patent.registrationDate
+Date de dépôt, date, filingDate, \"\", patent.filingDate
+Date d'acceptation, date, acceptationDate, \"\", patent.acceptationDate
+Date de licence, date, licensingDate, \"\", patent.licensingDate
+Inventeurs, string, inventors, \"\", patent.inventors
+Copropriétaires, string, coOwners, \"\", patent.coOwners
+Numéro de priorité, number, priorityNumber, 0, patent.priorityNumber
+Date de priorité, date, priorityDate, \"\", patent.priorityDate
+Numéro de publication, string, publicationNumber, \"\", patent.publicationNumber
+Date de publication, date, publicationDate, \"\", patent.publicationDate
+Lien inpi, string, inpiLink, \"\", patent.inpiLink
+Statut, bool, status, false, patent.status
+Pct extension obtenue, bool, pctExtensionObtained, false, patent.pctExtensionObtained
+Numéro de publication Pct Extension, string, publicationNumberPctExtension, \"\", patent.publicationNumberPctExtension
+Publication Date Pct Prolongation, date, publicationDatePctExtension, \"\", patent.publicationDatePctExtension
+Extension internationale, bool, internationalExtension, false, patent.internationalExtension
+Numéro de publication Extension internationale, string, publicationNumberInternationalExtension, \"\", patent.publicationNumberInternationalExtension
+Date de publication Extension internationale, date, publicationDateInternationalExtension, \"\", patent.publicationDateInternationalExtension
+Ref Contrat de Transfert, string, refTransferContract, \"\", patent.refTransferContract
+Nom Société impliquée, string, nameCompanyInvolved, \"\", patent.nameCompanyInvolved
+Nom Choix, string, nameChoice, \"\", patent.typePatentId.nameChoice

@@ -1,0 +1,167 @@
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={editorialActivityList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'editorialActivityList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={educationList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'educationList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={incomingMobilityList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'incomingMobilityList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={industrialContractList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'industrialContractList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={internationalCollaborationList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'internationalCollaborationList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={oralComPosterList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'oralComPosterList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={platformList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'platformList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={postDocList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'postDocList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={reviewArticleList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'reviewArticleList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={scientificExpertiseList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'scientificExpertiseList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={seiClinicalTrialList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'seiClinicalTrialList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>
+
+                <ToolkitProvider
+                    bootstrap4
+                    keyField="idActivity"
+                     data={srAwardList}
+                    columns={columns}
+                    exportCSV={ {
+                        fileName: 'srAwardList.csv',
+                        onlyExportFiltered: true,
+                        exportAll: false } }
+                    search
+                >
+                .....
+                </ToolkitProvider>

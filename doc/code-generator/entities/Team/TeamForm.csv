@@ -1,0 +1,5 @@
+data Label, html type, variableName, initialVariableNameValue, jsonPath
+Nom de l'équipe, string, teamName, "", team.teamName
+Création d'équipe, date, teamCreation, "", team.teamCreation
+fin d'équipe, date, teamEnd, "", team.teamEnd
+dernier rapport de l'équipe, date, teamLastReport, "", team.teamLastReport

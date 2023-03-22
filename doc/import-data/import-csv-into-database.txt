@@ -1,0 +1,29 @@
+# https://sequencediagram.org/
+title Importing CSV file into database
+
+User->Web Front End: Upload CSV file
+Web Front End->Web Front End: Detect target entity using file name pattern
+Web Front End->User: Request to select target entity \n(if pattern not found)
+User->Web Front End: Select target entity
+Web Front End->Web Front End: Parse CSV file with default delimiter
+Web Front End->User: Request to select delimiter \n(if necessary)
+User->Web Front End: Select delimiter
+Web Front End->Web Front End: Parse CSV file \n(second time if necessary)
+Web Front End->Web Front End: Compare to target entity template
+Web Front End->Web Front End: Check dependencies
+Web Front End->User: Request to upload missing dependencies \n(if necessary)
+User->Web Front End: Upload missing dependencies
+Web Front End->Web Front End: Check dependencies (again)
+Web Front End->User: Provide option to insert into database
+User->Web Front End: Request to insert into database
+Web Front End->Server Backend: Send filtered CSV list
+
+Server Backend->Server Backend: Calculate merging keys
+Server Backend->Database: Get current database list
+Server Backend->Server Backend: Compare to current database list
+Server Backend->Server Backend: Associate id (CSV to database)
+Server Backend->Database: Insert into database (if necessary)
+
+Database->Server Backend: Acknowledge insertion
+Server Backend->Web Front End: Return results \n(number of successful inserts \nand number of failed inserts with reasons)
+Web Front End->User: Display results

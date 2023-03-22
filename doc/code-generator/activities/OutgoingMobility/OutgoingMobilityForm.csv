@@ -1,0 +1,16 @@
+data Label, html type, variableName, initialVariableNameValue, jsonPath
+Nom de la personne concernée, string, namePersonConcerned, \"\", outgoingMobility.namePersonConcerned
+Date d'arrivée, date, arrivalDate, \"\", outgoingMobility.arrivalDate
+Date de départ, date, departureDate, \"\", outgoingMobility.departureDate
+Durée, number, duration, 0, outgoingMobility.duration
+Nom du laboratoire hôte, string, hostLabName, \"\", outgoingMobility.hostLabName
+Emplacement du laboratoire hôte, string, hostLabLocation, \"\", outgoingMobility.hostLabLocation
+Pi Partenaire, string, piPartner, \"\", outgoingMobility.piPartner
+Titre du projet, string, projectTitle, \"\", outgoingMobility.projectTitle
+Financement associé, string, associatedFunding, \"\", outgoingMobility.associatedFunding
+Nb Publications, number, nbPublications, 0, outgoingMobility.nbPublications
+Publication Référence, string, publicationReference, \"\", outgoingMobility.publicationReference
+Collaboration stratégique récurrente?, bool, strategicRecurringCollab, false, outgoingMobility.strategicRecurringCollab
+Projet actif?, bool, activeProject, false, outgoingMobility.activeProject
+Umr Coordonné?, bool, umrCoordinated, false, outgoingMobility.umrCoordinated
+Accord Signé?, bool, agreementSigned, false, outgoingMobility.agreementSigned
